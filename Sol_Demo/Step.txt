@@ -1,0 +1,18 @@
+Step 1:
+
+Install the Following Package
+npm install --save-dev typescript
+npm i --save-dev @types/node
+npm i --save-dev ts-node-dev
+
+Step 2:
+Add ts.Config file using following command.
+npx tsc --init [Check file]
+
+Step 3:
+To run this code we have to add a start script in the package.json file
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev --respawn --pretty --transpile-only ./src/Program.ts",
+    "debug": "ts-node-dev --inspect=4321 --pretty --transpile-only ./src/Program.ts",
+  }

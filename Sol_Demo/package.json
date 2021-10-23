@@ -1,0 +1,19 @@
+{
+  "name": "Sol_Demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev --respawn --pretty --transpile-only ./src/Program.ts",
+    "debug": "ts-node-dev --inspect=4321 --pretty --transpile-only ./src/Program.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.4",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  }
+}
